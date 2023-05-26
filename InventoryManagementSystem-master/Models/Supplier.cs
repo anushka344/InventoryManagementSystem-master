@@ -21,7 +21,8 @@ namespace InventoryManagementSystem.Models
         public int CountryId { get; set; } //foreign key
 
         public Country Country { get; set; }
-        public Product Product { get; set;  }
+
+        public ICollection<Product> Products { get; set; }
 
     }
 }

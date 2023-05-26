@@ -51,8 +51,6 @@ namespace InventoryManagementSystem.Controllers
 
             _dbContext.Products.Add(product);
             _dbContext.SaveChanges();
-
-
             return Ok(product);
         }
 
